@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>No workspace is bound to this domain.</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.c9.io/nc-3.1.2816-95a290ea/static/error_handler/style.css" />
+    <style type="text/css">
+        .error_content {
+            background: rgba(255, 255, 255, 0.23);
+            padding: 10px;
+            width: 641px;
+            margin: 25px 0;
+            display: none;
+        }
+        
+        #not-bound-msg {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="errorUnknown light">
+    <div id="wrapper">
+        <h1>No workspace is bound to this domain.</h1>
+        <div class="error_content" id="project-access-msg">
+            <p>Cloud9 can't get you to your requested workspace. Here are some suggestions on how to figure out what's going on:
+                <div class="baseList">
+                    <ul>
+                        <li>Check that the workspace name (<strong>undefined</strong>) and username (<strong>undefined</strong>) are typed correctly.</li>
+                        <li>Check that the server is successfully running on Cloud9:
+                            <ul>
+                                <li>If the server hit an error, the output window will have a message telling you what it is</li>
+                                <li>If you're in the middle of debugging code, your server might be paused right now</li>
+                                <li>The server might be running on a different port; make sure it's on port <code>$PORT</code> with <code>$IP</code> as the IP address</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+        <div class="error_content" id="not-bound-msg">
+            <p>No Cloud9 workspace is bound to this domain name. Please check if the domain name is spelled correctly.</p>
+        </div>
+        <div class="error_content" id="bad_headers-msg">
+            <p>The request could not be proxied because some headers contained invalid data.</p>
+        </div>
+        <div class="error_content" id="generic-msg">
+            <p>There was an error proxying the request.</p>
+        </div> <a href="http://status.c9.io">Status Page</a> | <a href="https://c9.io/support">Support</a> | <a href="https://c9.io/dashboard.html">Dashboard</a> | <a href="https://c9.io">Home</a> </div>
+</body>
+
+</html>

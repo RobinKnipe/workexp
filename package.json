@@ -1,0 +1,25 @@
+{
+  "name": "workexp",
+  "version": "1.0.0",
+  "description": "Work experience project",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobinKnipe/workexp.git"
+  },
+  "author": "Robin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobinKnipe/workexp/issues"
+  },
+  "homepage": "https://github.com/RobinKnipe/workexp#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "hogan-express": "^0.5.2",
+    "morgan": "^1.7.0"
+  }
+}
